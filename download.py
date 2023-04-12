@@ -41,7 +41,7 @@ def splicing(file_name, title):
 def main():
     # 这一行代码是为了登录并拿到session 当我们拿到session之后 才能得到包含高清下载链接的html文件
     # 否则我们只能拿到只有360p和480p下载链接的html文件
-    session = my_login("13849857524", "cwb68582818")
+    session = my_login("username", "password")
     resp = session.get(url)
     # 如果只想要下载低清的视频 那就不用登录 直接用下面这行代码就行
     # resp = requests.get(url, headers=headers)
